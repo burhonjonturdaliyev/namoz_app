@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:namoz_app/erkaklar_uchun/erkaklar_uchun_namoz.dart';
 
 // ignore: camel_case_types
 class Home_screen extends StatefulWidget {
@@ -32,99 +33,114 @@ class _Home_screenState extends State<Home_screen> {
   Widget build(BuildContext context) {
     return Scaffold(
         drawer: Drawer(
-            child: Column(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            Image.asset("Images/all.png"),
-            const Divider(
-              thickness: 1,
-            ),
-            ListTile(
-              title: Row(
-                // ignore: prefer_const_literals_to_create_immutables
-                children: [
-                  const Icon(
-                    Icons.info_outline,
-                    color: Colors.black,
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  const Text("Ilova haqida"),
-                ],
+            child: SafeArea(
+          child: Column(
+            // ignore: prefer_const_literals_to_create_immutables
+            children: [
+              Image.asset("Images/all.png"),
+              const Divider(
+                thickness: 1,
               ),
-              onTap: null,
-              onLongPress: null,
-            ),
-            const Divider(
-              thickness: 1,
-            ),
-            ListTile(
-              title: Row(
-                // ignore: prefer_const_literals_to_create_immutables
-                children: [
-                  const Icon(
-                    Icons.share_outlined,
-                    color: Colors.black,
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  const Text("Biz Instagramda!"),
-                ],
+              ListTile(
+                title: Row(
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: [
+                    const Icon(
+                      Icons.info_outline,
+                      color: Colors.black,
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    const Text("Ilova haqida"),
+                  ],
+                ),
+                onTap: null,
+                onLongPress: null,
               ),
-              onTap: null,
-              onLongPress: null,
-            ),
-            const Divider(
-              thickness: 1,
-            ),
-            ListTile(
-              title: Row(
-                // ignore: prefer_const_literals_to_create_immutables
-                children: [
-                  const Icon(
-                    Icons.settings,
-                    color: Colors.black,
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  const Text("Sozlamalar"),
-                ],
+              const Divider(
+                thickness: 1,
               ),
-              onTap: null,
-              onLongPress: null,
-            ),
-            const Divider(
-              thickness: 1,
-            ),
-            ListTile(
-              title: Row(
-                // ignore: prefer_const_literals_to_create_immutables
-                children: [
-                  const Icon(
-                    Icons.exit_to_app_rounded,
-                    color: Colors.black,
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  const Text("Dasturdan chiqish"),
-                ],
+              ListTile(
+                title: Row(
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: [
+                    const Icon(
+                      Icons.share_outlined,
+                      color: Colors.black,
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    const Text("Biz Instagramda!"),
+                  ],
+                ),
+                onTap: null,
+                onLongPress: null,
               ),
-              onTap: () {
-                exitDialog(context);
-              },
-            ),
-            const Divider(
-              thickness: 1,
-            )
-          ],
+              const Divider(
+                thickness: 1,
+              ),
+              ListTile(
+                title: Row(
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: [
+                    const Icon(
+                      Icons.settings,
+                      color: Colors.black,
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    const Text("Sozlamalar"),
+                  ],
+                ),
+                onTap: null,
+                onLongPress: null,
+              ),
+              const Divider(
+                thickness: 1,
+              ),
+              ListTile(
+                title: Row(
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: [
+                    const Icon(
+                      Icons.exit_to_app_rounded,
+                      color: Colors.black,
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    const Text("Dasturdan chiqish"),
+                  ],
+                ),
+                onTap: () {
+                  exitDialog(context);
+                },
+              ),
+              const Divider(
+                thickness: 1,
+              )
+            ],
+          ),
         )),
         backgroundColor: Colors.white,
         appBar: AppBar(
-          title: const Text("Namoz o'qishni o'rganish"),
+          title: const Text("NAMOZ O'QISHNI O'RGANISH"),
+          centerTitle: true,
+          // ignore: prefer_const_literals_to_create_immutables
+          actions: [
+            Padding(
+              padding: const EdgeInsets.only(right: 15),
+              child: GestureDetector(
+                child: const Icon(
+                  Icons.settings,
+                  color: Colors.white,
+                ),
+              ),
+            )
+          ],
         ),
         body: ListView(
           children: [
@@ -135,38 +151,47 @@ class _Home_screenState extends State<Home_screen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Container(
-                        width: MediaQuery.of(context).size.width * .45,
-                        height: 130,
-                        decoration: BoxDecoration(
-                          color: Colors.amber,
-                          borderRadius: BorderRadius.circular(16),
-                          // ignore: prefer_const_literals_to_create_immutables
-                          boxShadow: [
-                            const BoxShadow(
-                                offset: Offset(0, 17),
-                                blurRadius: 23,
-                                spreadRadius: -13,
-                                color: Colors.black54)
-                          ],
-                        ),
-                        child: Column(
-                          // ignore: prefer_const_literals_to_create_immutables
-                          children: [
-                            Image.asset(
-                              "Images/man.png",
-                              width: 70,
-                              color: Colors.blueAccent,
-                            ),
-                            const Text(
-                              "ERKAKLAR UCHUN NAMOZ",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            ),
-                          ],
+                      GestureDetector(
+                        onTap: () async {
+                          await Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      const Erkaklar_uchun_namoz()));
+                        },
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * .45,
+                          height: 130,
+                          decoration: BoxDecoration(
+                            color: Colors.amber,
+                            borderRadius: BorderRadius.circular(16),
+                            // ignore: prefer_const_literals_to_create_immutables
+                            boxShadow: [
+                              const BoxShadow(
+                                  offset: Offset(0, 17),
+                                  blurRadius: 23,
+                                  spreadRadius: -13,
+                                  color: Colors.black54)
+                            ],
+                          ),
+                          child: Column(
+                            // ignore: prefer_const_literals_to_create_immutables
+                            children: [
+                              Image.asset(
+                                "Images/man.png",
+                                width: 70,
+                                color: Colors.blueAccent,
+                              ),
+                              const Text(
+                                "ERKAKLAR UCHUN NAMOZ",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                       Container(
