@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:namoz_app/ayollar_uchun/ayollar_uchun_namoz.dart';
 import 'package:namoz_app/erkaklar_uchun/erkaklar_uchun_namoz.dart';
 
 // ignore: camel_case_types
@@ -194,38 +195,45 @@ class _Home_screenState extends State<Home_screen> {
                           ),
                         ),
                       ),
-                      Container(
-                        width: MediaQuery.of(context).size.width * .45,
-                        height: 130,
-                        decoration: BoxDecoration(
-                          color: Colors.blueAccent,
-                          borderRadius: BorderRadius.circular(16),
-                          // ignore: prefer_const_literals_to_create_immutables
-                          boxShadow: [
-                            const BoxShadow(
-                                offset: Offset(0, 17),
-                                blurRadius: 23,
-                                spreadRadius: -13,
-                                color: Colors.black54)
-                          ],
-                        ),
-                        child: Column(
-                          // ignore: prefer_const_literals_to_create_immutables
-                          children: [
-                            Image.asset(
-                              "Images/woman.png",
-                              width: 90,
-                              color: Colors.pink,
-                            ),
-                            const Text(
-                              "AYOLLAR UCHUN NAMOZ",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
-                            ),
-                          ],
+                      GestureDetector(
+                        onTap: () => Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const ayollar_uchun_namoz())),
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * .45,
+                          height: 130,
+                          decoration: BoxDecoration(
+                            color: Colors.blueAccent,
+                            borderRadius: BorderRadius.circular(16),
+                            // ignore: prefer_const_literals_to_create_immutables
+                            boxShadow: [
+                              const BoxShadow(
+                                  offset: Offset(0, 17),
+                                  blurRadius: 23,
+                                  spreadRadius: -13,
+                                  color: Colors.black54)
+                            ],
+                          ),
+                          child: Column(
+                            // ignore: prefer_const_literals_to_create_immutables
+                            children: [
+                              Image.asset(
+                                "Images/woman.png",
+                                width: 90,
+                                color: Colors.pink,
+                              ),
+                              const Text(
+                                "AYOLLAR UCHUN NAMOZ",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ],

@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/azon.dart';
 
 // ignore: camel_case_types
-class Erkaklar_uchun_namoz extends StatelessWidget {
-  const Erkaklar_uchun_namoz({super.key});
+class ayollar_uchun_namoz extends StatelessWidget {
+  const ayollar_uchun_namoz({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("ERKAKLAR UCHUN NAMOZ"),
         centerTitle: true,
+        title: const Text("AYOLLAR UCHUN NAMOZ"),
       ),
       body: ListView(children: [
         Padding(
@@ -18,10 +17,7 @@ class Erkaklar_uchun_namoz extends StatelessWidget {
           child: Column(
             children: [
               GestureDetector(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Azon()));
-                },
+                onTap: () {},
                 child: Container(
                   width: MediaQuery.of(context).size.width * .95,
                   height: MediaQuery.of(context).size.height * .075,
@@ -39,11 +35,12 @@ class Erkaklar_uchun_namoz extends StatelessWidget {
                   ),
                   child: Row(children: [
                     Image.asset(
-                      "Images/azan_man.png",
+                      "Images/woman.png",
+                      color: Colors.pink,
                       height: MediaQuery.of(context).size.height * .07,
                     ),
                     Text(
-                      "AZON",
+                      "AYOLLARGA XOS HOLATLAR",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: MediaQuery.of(context).size.height * .025),

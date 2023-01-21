@@ -65,7 +65,12 @@ flutter:
     - Images/man.png
     - Images/woman.png
     - Images/all.png
+    - Images/mistake.png
     - Images/azan_man.png
+    - Images/namoz/asr.png
+    - Images/namoz/bomdod.png
+    - Images/namoz/peshin.png
+    - Images/namoz/xufton.png
     - music/
 
   # An image asset can refer to one or more resolution-specific "variants", see
