@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:namoz_app/home_screen.dart';
+import 'package:namoz_app/splash_screen.dart';
 
 void main() {
   // ignore: prefer_const_constructors
   runApp(MaterialApp(
-    home: const Home_screen(),
+    home: const Splash_screen(),
     debugShowCheckedModeBanner: false,
   ));
 }

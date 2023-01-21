@@ -196,8 +196,7 @@ class _Home_screenState extends State<Home_screen> {
                         ),
                       ),
                       GestureDetector(
-                        onTap: () => Navigator.push(
-                            context,
+                        onTap: () => Navigator.of(context).push(
                             MaterialPageRoute(
                                 builder: (context) =>
                                     const ayollar_uchun_namoz())),
