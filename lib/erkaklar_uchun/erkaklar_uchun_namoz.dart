@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/azon.dart';
+import 'package:namoz_app/erkaklar_uchun/azon/slider/slider_azon.dart';
 
 // ignore: camel_case_types
 class Erkaklar_uchun_namoz extends StatelessWidget {
@@ -19,8 +19,10 @@ class Erkaklar_uchun_namoz extends StatelessWidget {
             children: [
               GestureDetector(
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Azon()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Slider_azon()));
                 },
                 child: Container(
                   width: MediaQuery.of(context).size.width * .95,
