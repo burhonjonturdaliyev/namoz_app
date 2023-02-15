@@ -27,8 +27,8 @@ class _Slider_azonState extends State<Slider_azon> {
     return Scaffold(
       body: PageView(
         controller: page_controller,
-        // ignore: prefer_const_literals_to_create_immutables
-        children: [const Azon1(), const Azon2(), const Azon3(), const Azon4()],
+        // ignore: prefer_const_literals_to_create_immutables, prefer_const_constructors
+        children: [Azon1(), Azon2(), Azon3(), Azon4()],
       ),
     );
   }

@@ -43,42 +43,44 @@ class _Azon1State extends State<Azon1> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              CircleAvatar(
-                radius: 25,
-                child: IconButton(
-                  icon: Icon(
-                    isPlaying ? Icons.pause : Icons.play_arrow,
+    return SafeArea(
+      minimum: const EdgeInsets.only(top: 20),
+      child: ListView(children: [
+        Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CircleAvatar(
+                  radius: 25,
+                  child: IconButton(
+                    icon: Icon(
+                      isPlaying ? Icons.pause : Icons.play_arrow,
+                    ),
+                    onPressed: () {
+                      if (isPlaying) {
+                        player.pause();
+                      } else {
+                        player.play(AssetSource('azon.mp3'));
+                      }
+                    },
                   ),
-                  onPressed: () {
-                    if (isPlaying) {
-                      player.pause();
-                    } else {
-                      player.play(AssetSource('azon.mp3'));
-                    }
+                ),
+                Slider(
+                  min: 0,
+                  max: duration.inSeconds.toDouble(),
+                  value: position.inSeconds.toDouble(),
+                  onChanged: (value) {
+                    final position = Duration(seconds: value.toInt());
+                    player.seek(position);
+                    player.resume();
                   },
                 ),
-              ),
-              Slider(
-                min: 0,
-                max: duration.inSeconds.toDouble(),
-                value: position.inSeconds.toDouble(),
-                onChanged: (value) {
-                  final position = Duration(seconds: value.toInt());
-                  player.seek(position);
-                  player.resume();
-                },
-              ),
-            ],
-          ),
-        ],
-      ),
+              ],
+            ),
+          ],
+        ),
+      ]),
     );
   }
 }
