@@ -176,6 +176,7 @@ class _Home_screenState extends State<Home_screen> {
                             ],
                           ),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             // ignore: prefer_const_literals_to_create_immutables
                             children: [
                               Image.asset(
@@ -184,7 +185,7 @@ class _Home_screenState extends State<Home_screen> {
                                 color: Colors.blueAccent,
                               ),
                               const Text(
-                                "ERKAKLAR UCHUN NAMOZ",
+                                "ERKAKLAR UCHUN",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     fontSize: 16,
@@ -204,7 +205,7 @@ class _Home_screenState extends State<Home_screen> {
                           width: MediaQuery.of(context).size.width * .45,
                           height: 130,
                           decoration: BoxDecoration(
-                            color: Colors.blueAccent,
+                            color: Colors.deepPurpleAccent,
                             borderRadius: BorderRadius.circular(16),
                             // ignore: prefer_const_literals_to_create_immutables
                             boxShadow: [
@@ -216,6 +217,7 @@ class _Home_screenState extends State<Home_screen> {
                             ],
                           ),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             // ignore: prefer_const_literals_to_create_immutables
                             children: [
                               Image.asset(
@@ -224,7 +226,7 @@ class _Home_screenState extends State<Home_screen> {
                                 color: Colors.pink,
                               ),
                               const Text(
-                                "AYOLLAR UCHUN NAMOZ",
+                                "AYOLLAR UCHUN",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
                                     fontSize: 16,
@@ -238,6 +240,276 @@ class _Home_screenState extends State<Home_screen> {
                     ],
                   ),
                 ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      GestureDetector(
+                        onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const ayollar_uchun_namoz())),
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * .45,
+                          height: 130,
+                          decoration: BoxDecoration(
+                            color: Colors.tealAccent,
+                            borderRadius: BorderRadius.circular(16),
+                            // ignore: prefer_const_literals_to_create_immutables
+                            boxShadow: [
+                              const BoxShadow(
+                                  offset: Offset(0, 17),
+                                  blurRadius: 23,
+                                  spreadRadius: -13,
+                                  color: Colors.black54)
+                            ],
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            // ignore: prefer_const_literals_to_create_immutables
+                            children: [
+                              Image.asset(
+                                "Images/woman.png",
+                                width: 90,
+                                color: Colors.pink,
+                              ),
+                              const Text(
+                                "AYOLLAR UCHUN",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const ayollar_uchun_namoz())),
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * .45,
+                          height: 130,
+                          decoration: BoxDecoration(
+                            color: Colors.purple,
+                            borderRadius: BorderRadius.circular(16),
+                            // ignore: prefer_const_literals_to_create_immutables
+                            boxShadow: [
+                              const BoxShadow(
+                                  offset: Offset(0, 17),
+                                  blurRadius: 23,
+                                  spreadRadius: -13,
+                                  color: Colors.black54)
+                            ],
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            // ignore: prefer_const_literals_to_create_immutables
+                            children: [
+                              Image.asset(
+                                "Images/woman.png",
+                                width: 90,
+                                color: Colors.pink,
+                              ),
+                              const Text(
+                                "AYOLLAR UCHUN",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      GestureDetector(
+                        onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const ayollar_uchun_namoz())),
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * .45,
+                          height: 130,
+                          decoration: BoxDecoration(
+                            color: Colors.brown,
+                            borderRadius: BorderRadius.circular(16),
+                            // ignore: prefer_const_literals_to_create_immutables
+                            boxShadow: [
+                              const BoxShadow(
+                                  offset: Offset(0, 17),
+                                  blurRadius: 23,
+                                  spreadRadius: -13,
+                                  color: Colors.black54)
+                            ],
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            // ignore: prefer_const_literals_to_create_immutables
+                            children: [
+                              Image.asset(
+                                "Images/woman.png",
+                                width: 90,
+                                color: Colors.pink,
+                              ),
+                              const Text(
+                                "AYOLLAR UCHUN",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const ayollar_uchun_namoz())),
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * .45,
+                          height: 130,
+                          decoration: BoxDecoration(
+                            color: Colors.orange,
+                            borderRadius: BorderRadius.circular(16),
+                            // ignore: prefer_const_literals_to_create_immutables
+                            boxShadow: [
+                              const BoxShadow(
+                                  offset: Offset(0, 17),
+                                  blurRadius: 23,
+                                  spreadRadius: -13,
+                                  color: Colors.black54)
+                            ],
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            // ignore: prefer_const_literals_to_create_immutables
+                            children: [
+                              Image.asset(
+                                "Images/woman.png",
+                                width: 90,
+                                color: Colors.pink,
+                              ),
+                              const Text(
+                                "AYOLLAR UCHUN",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      GestureDetector(
+                        onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const ayollar_uchun_namoz())),
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * .45,
+                          height: 130,
+                          decoration: BoxDecoration(
+                            color: Colors.green,
+                            borderRadius: BorderRadius.circular(16),
+                            // ignore: prefer_const_literals_to_create_immutables
+                            boxShadow: [
+                              const BoxShadow(
+                                  offset: Offset(0, 17),
+                                  blurRadius: 23,
+                                  spreadRadius: -13,
+                                  color: Colors.black54)
+                            ],
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            // ignore: prefer_const_literals_to_create_immutables
+                            children: [
+                              Image.asset(
+                                "Images/woman.png",
+                                width: 90,
+                                color: Colors.pink,
+                              ),
+                              const Text(
+                                "AYOLLAR UCHUN",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const ayollar_uchun_namoz())),
+                        child: Container(
+                          width: MediaQuery.of(context).size.width * .45,
+                          height: 130,
+                          decoration: BoxDecoration(
+                            color: Colors.indigo,
+                            borderRadius: BorderRadius.circular(16),
+                            // ignore: prefer_const_literals_to_create_immutables
+                            boxShadow: [
+                              const BoxShadow(
+                                  offset: Offset(0, 17),
+                                  blurRadius: 23,
+                                  spreadRadius: -13,
+                                  color: Colors.black54)
+                            ],
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            // ignore: prefer_const_literals_to_create_immutables
+                            children: [
+                              Image.asset(
+                                "Images/woman.png",
+                                width: 90,
+                                color: Colors.pink,
+                              ),
+                              const Text(
+                                "AYOLLAR UCHUN",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                )
               ],
             )
           ],

@@ -5,19 +5,16 @@ class Azon2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.amber,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            const Text(
-              "Page 2",
-              style: TextStyle(fontSize: 25),
-            )
-          ],
-        ),
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        // ignore: prefer_const_literals_to_create_immutables
+        children: [
+          const Text(
+            "Page 2",
+            style: TextStyle(fontSize: 25),
+          )
+        ],
       ),
     );
   }
