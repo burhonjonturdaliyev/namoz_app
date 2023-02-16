@@ -22,7 +22,9 @@ class Erkaklar_uchun_namoz extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const Slider_azon()));
+                          builder: (context) => Slider_azon(
+                                value: 1,
+                              )));
                 },
                 child: Container(
                   width: MediaQuery.of(context).size.width * .95,

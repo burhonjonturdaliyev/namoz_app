@@ -20,7 +20,7 @@ class _Splash_screenState extends State<Splash_screen> {
   void initState() {
     super.initState();
     Timer(
-      const Duration(seconds: 4),
+      const Duration(seconds: 5),
       () {
         Navigator.of(context).pushAndRemoveUntil(
             MaterialPageRoute(builder: (context) => const Home_screen()),
@@ -66,7 +66,7 @@ class _Splash_screenState extends State<Splash_screen> {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               AnimatedTextKit(animatedTexts: [
-                TyperAnimatedText("Biz bilan qoling!",
+                TyperAnimatedText("Biz bilan birga qoling!",
                     textStyle: TextStyle(color: Colors.white)),
                 TyperAnimatedText("Biz bilan Namoz o'qishni o'rganing!",
                     textStyle: TextStyle(color: Colors.white))

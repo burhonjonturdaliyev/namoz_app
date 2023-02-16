@@ -1,12 +1,10 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, prefer_const_constructors_in_immutables, avoid_unnecessary_containers
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, prefer_const_constructors_in_immutables, avoid_unnecessary_containers, use_key_in_widget_constructors, unused_element
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/pages/azon3.dart';
+import 'package:namoz_app/erkaklar_uchun/azon/slider/slider_azon.dart';
 
 // ignore: must_be_immutable
 class Azon2 extends StatelessWidget {
-  const Azon2({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Column(children: [
@@ -68,9 +66,22 @@ class Azon2 extends StatelessWidget {
               },
               icon: Icon(Icons.arrow_back)),
           Text("2/4"),
-          IconButton(onPressed: () {}, icon: Icon(Icons.arrow_forward))
+          IconButton(
+              onPressed: () => _sendDataToSecondScreen(context),
+              icon: Icon(Icons.arrow_forward))
         ]),
       )
     ]);
+  }
+
+  static void _sendDataToSecondScreen(BuildContext context) {
+    int textToSend = 3;
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => Slider_azon(
+            value: textToSend,
+          ),
+        ));
   }
 }
