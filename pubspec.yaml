@@ -74,6 +74,7 @@ flutter:
     - Images/namoz/bomdod.png
     - Images/namoz/peshin.png
     - Images/namoz/xufton.png
+    - Images/azan.png
     - assets/azon.mp3
 
   # An image asset can refer to one or more resolution-specific "variants", see

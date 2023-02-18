@@ -2,11 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:namoz_app/Widgets/text_style.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/pages/azon3.dart';
+import 'package:namoz_app/erkaklar_uchun/azon/pages/Azon_tartibi.dart';
 import 'package:namoz_app/erkaklar_uchun/azon/slider/slider_azon.dart';
 
-// ignore: must_be_immutable
-class Azon2 extends StatelessWidget {
+// ignore: must_be_immutable, camel_case_types
+class Azon_Iqomat extends StatelessWidget {
   // ignore: non_constant_identifier_names
 
   @override
@@ -124,13 +124,11 @@ class Azon2 extends StatelessWidget {
           ),
         ),
         NavigationContainer(
-          currentPage: "2/6",
+          currentPage: "1/6",
           onNextPressed: () => Navigator.of(context).push(MaterialPageRoute(
-            builder: (context) => Azon3(),
+            builder: (context) => Azon_tartibi(),
           )),
-          onPrevPressed: () {
-            Navigator.pop(context);
-          },
+          onPrevPressed: null,
         )
       ]),
     );

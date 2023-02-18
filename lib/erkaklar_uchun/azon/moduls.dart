@@ -3,19 +3,21 @@
 import 'package:flutter/material.dart';
 import 'package:namoz_app/Widgets/text_style.dart';
 import 'package:namoz_app/erkaklar_uchun/azon/models/navigator_container.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/pages/azon1.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/pages/azon2.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/pages/azon3.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/pages/azon4.dart';
+import 'package:namoz_app/erkaklar_uchun/azon/pages/Iqomat_takbiri.dart';
+import 'package:namoz_app/erkaklar_uchun/azon/pages/azon.dart';
+import 'package:namoz_app/erkaklar_uchun/azon/pages/azon_duosi.dart';
+import 'package:namoz_app/erkaklar_uchun/azon/pages/azon_vs_iqomat.dart';
+import 'package:namoz_app/erkaklar_uchun/azon/pages/Azon_tartibi.dart';
+import 'package:namoz_app/erkaklar_uchun/azon/pages/Iqomat_aytish.dart';
 
 class Moduls_azan extends StatelessWidget {
   List<navigator_azon> azon = [
-    navigator_azon(info: "AZON VA IQOMAT", page: Azon1()),
-    navigator_azon(info: "AZON AYTISH TARTIBI", page: Azon2()),
-    navigator_azon(info: "IQOMAT AYTISH TARTIBI", page: Azon3()),
-    navigator_azon(info: "AZON", page: Azon4()),
-    navigator_azon(info: "AZON DUOSI", page: Azon1()),
-    navigator_azon(info: "IQOMAT TAKBIRI", page: Azon1()),
+    navigator_azon(info: "AZON VA IQOMAT", page: Azon_Iqomat()),
+    navigator_azon(info: "AZON AYTISH TARTIBI", page: Azon_tartibi()),
+    navigator_azon(info: "IQOMAT AYTISH TARTIBI", page: Iqomat_tartibi()),
+    navigator_azon(info: "AZON", page: Azon()),
+    navigator_azon(info: "AZON DUOSI", page: Azon_duosi()),
+    navigator_azon(info: "IQOMAT TAKBIRI", page: Iqomat_takbiri()),
   ];
 
   Moduls_azan({super.key});
