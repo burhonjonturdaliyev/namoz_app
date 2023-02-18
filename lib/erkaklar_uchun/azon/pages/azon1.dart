@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:namoz_app/erkaklar_uchun/azon/pages/azon2.dart';
+
+import '../slider/slider_azon.dart';
 
 class Azon1 extends StatefulWidget {
   const Azon1({super.key});
@@ -43,10 +46,10 @@ class _Azon1State extends State<Azon1> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      minimum: const EdgeInsets.only(top: 20),
-      child: ListView(children: [
-        Column(
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -78,9 +81,16 @@ class _Azon1State extends State<Azon1> {
                 ),
               ],
             ),
+            NavigationContainer(
+                currentPage: "1/5",
+                onPrevPressed: null,
+                onNextPressed: () =>
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => Azon2(),
+                    )))
           ],
         ),
-      ]),
+      ),
     );
   }
 }

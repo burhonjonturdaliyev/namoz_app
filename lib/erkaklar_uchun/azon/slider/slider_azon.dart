@@ -1,40 +1,45 @@
 // ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors_in_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/pages/azon1.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/pages/azon2.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/pages/azon3.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/pages/azon4.dart';
 
-// ignore: camel_case_types
-class Slider_azon extends StatefulWidget {
-  final int value;
-  Slider_azon({required this.value});
+class NavigationContainer extends StatelessWidget {
+  final String currentPage;
+  final VoidCallback? onNextPressed;
+  final VoidCallback? onPrevPressed;
 
-  static int page = value.toInt();
-
-  @override
-  State<Slider_azon> createState() => _Slider_azonState();
-}
-
-// ignore: camel_case_types
-class _Slider_azonState extends State<Slider_azon> {
-  // ignore: non_constant_identifier_names
-  PageController page_controller = PageController(initialPage: value);
-
-  @override
-  void dispose() {
-    super.dispose();
-    page_controller.dispose();
-  }
+  NavigationContainer({
+    required this.currentPage,
+    required this.onNextPressed,
+    required this.onPrevPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: PageView(
-        controller: page_controller,
-        // ignore: prefer_const_literals_to_create_immutables
-        children: [Azon1(), Azon2(), Azon3(), Azon4()],
+    return Container(
+      height: 56.0,
+      color: Colors.grey.shade400,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          IconButton(
+            onPressed: onPrevPressed,
+            icon: Icon(Icons.arrow_back),
+            color: Colors.white,
+          ),
+          Text(
+            currentPage,
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 16.0,
+            ),
+          ),
+          IconButton(
+            onPressed: onNextPressed,
+            icon: Icon(Icons.arrow_forward),
+            color: Colors.white,
+          ),
+        ],
       ),
     );
   }

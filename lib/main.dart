@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:namoz_app/splash_screen.dart';
+import 'package:namoz_app/splash_screen/splash_screen.dart';
 
 void main() {
   // ignore: prefer_const_constructors

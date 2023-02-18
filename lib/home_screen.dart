@@ -157,8 +157,10 @@ class _Home_screenState extends State<Home_screen> {
                           await Navigator.push(
                               context,
                               MaterialPageRoute(
+                                  // ignore: prefer_const_constructors
                                   builder: (context) =>
-                                      const Erkaklar_uchun_namoz()));
+                                      // ignore: prefer_const_constructors
+                                      Erkaklar_uchun_namoz()));
                         },
                         child: Container(
                           width: MediaQuery.of(context).size.width * .45,
