@@ -77,6 +77,12 @@ flutter:
     - Images/azan.png
     - Images/Niyat.png
     - Images/Takbir.png
+    - Images/Ruku.png
+    - Images/Sajda.png
+    - Images/Sajda_xato.png
+    - Images/Jalsa.png
+    - Images/Jalsa_xato.png
+    - Images/Qavma.png
     - assets/azon.mp3
 
   # An image asset can refer to one or more resolution-specific "variants", see
