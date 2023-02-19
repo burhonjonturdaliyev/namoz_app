@@ -38,9 +38,13 @@ class Moduls_azan extends StatelessWidget {
   Widget Moduls_items(navigator_azon azon, BuildContext context) {
     return GestureDetector(
       child: Padding(
-        padding: const EdgeInsets.all(6.0),
-        child: Card(
-          elevation: 5,
+        padding: const EdgeInsets.all(4.0),
+        child: Container(
+          height: MediaQuery.of(context).size.height * 0.09,
+          decoration: BoxDecoration(
+              color: Colors.cyan,
+              border: Border.all(width: 1, color: Colors.grey.shade300),
+              borderRadius: BorderRadius.circular(16)),
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
