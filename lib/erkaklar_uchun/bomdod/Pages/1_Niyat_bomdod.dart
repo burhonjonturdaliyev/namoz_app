@@ -67,7 +67,7 @@ class Niyat_bomdod extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image.asset(
-                    "Images/Niyat.png",
+                    "Images/Qavma.png",
                     width: MediaQuery.of(context).size.width * 0.65,
                   )
                 ],

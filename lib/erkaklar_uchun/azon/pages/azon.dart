@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:namoz_app/Widgets/audio.dart';
 import 'package:namoz_app/Widgets/text_style.dart';
 import 'package:namoz_app/erkaklar_uchun/azon/pages/azon_duosi.dart';
 
@@ -22,29 +23,6 @@ class _Azon1State extends State<Azon> {
 
   String formatTime(int seconds) {
     return '${(Duration(seconds: seconds))}'.split('.')[0].padLeft(8, '0');
-  }
-
-  @override
-  void initState() {
-    super.initState();
-
-    player.onPlayerStateChanged.listen((state) {
-      setState(() {
-        isPlaying = state == PlayerState.playing;
-      });
-    });
-
-    player.onDurationChanged.listen((newDuration) {
-      setState(() {
-        duration = newDuration;
-      });
-    });
-
-    player.onPositionChanged.listen((newPosition) {
-      setState(() {
-        position = newPosition;
-      });
-    });
   }
 
   @override
@@ -154,36 +132,7 @@ class _Azon1State extends State<Azon> {
                   SizedBox(
                     height: 10,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      CircleAvatar(
-                        radius: 25,
-                        child: IconButton(
-                          icon: Icon(
-                            isPlaying ? Icons.pause : Icons.play_arrow,
-                          ),
-                          onPressed: () {
-                            if (isPlaying) {
-                              player.pause();
-                            } else {
-                              player.play(AssetSource('azon.mp3'));
-                            }
-                          },
-                        ),
-                      ),
-                      Slider(
-                        min: 0,
-                        max: duration.inSeconds.toDouble(),
-                        value: position.inSeconds.toDouble(),
-                        onChanged: (value) {
-                          final position = Duration(seconds: value.toInt());
-                          player.seek(position);
-                          player.resume();
-                        },
-                      ),
-                    ],
-                  ),
+                  Audio_widgets(location: "azon.mp3"),
                   SizedBox(
                     height: 10,
                   ),

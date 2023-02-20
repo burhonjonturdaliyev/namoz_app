@@ -85,6 +85,15 @@ flutter:
     - Images/Qavma.png
     - Images/Salom.png
     - assets/azon.mp3
+    - assets/An_Nos_surasi.mp3
+    - assets/Falaq_surasi.mp3
+    - assets/Fotiha_surasi.mp3
+    - assets/Ixlos_surasi.mp3
+    - assets/Kavsar_surasi.mp3
+    - assets/Sano_duo.mp3
+    - assets/At_Tahiyat.mp3
+    - assets/Salovat.mp3
+    - assets/Duo.mp3
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
