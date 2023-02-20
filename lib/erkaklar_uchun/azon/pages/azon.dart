@@ -6,7 +6,7 @@ import 'package:namoz_app/Widgets/audio.dart';
 import 'package:namoz_app/Widgets/text_style.dart';
 import 'package:namoz_app/erkaklar_uchun/azon/pages/azon_duosi.dart';
 
-import '../slider/slider_azon.dart';
+import '../../../slider/slider_azon.dart';
 
 class Azon extends StatefulWidget {
   const Azon({super.key});

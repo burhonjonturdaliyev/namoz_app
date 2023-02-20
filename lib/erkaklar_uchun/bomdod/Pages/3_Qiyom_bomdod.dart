@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:namoz_app/Widgets/audio.dart';
 import 'package:namoz_app/Widgets/hiden.dart';
 import 'package:namoz_app/Widgets/text_style.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/slider/slider_azon.dart';
+import 'package:namoz_app/slider/slider_azon.dart';
 import 'package:namoz_app/erkaklar_uchun/bomdod/Pages/4_Ruku_bomdod.dart';
 
 class Qiyom_bomdod extends StatefulWidget {

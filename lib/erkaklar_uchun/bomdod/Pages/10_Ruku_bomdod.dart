@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:namoz_app/Widgets/text_style.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/slider/slider_azon.dart';
+import 'package:namoz_app/slider/slider_azon.dart';
 import 'package:namoz_app/erkaklar_uchun/bomdod/Pages/11_Qavma_bomdod.dart';
 
 class Ruku_bomdod_2 extends StatelessWidget {

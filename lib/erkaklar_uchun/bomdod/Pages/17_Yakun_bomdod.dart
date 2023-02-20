@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:namoz_app/Widgets/hiden.dart';
 import 'package:namoz_app/Widgets/text_style.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/slider/slider_azon.dart';
+import 'package:namoz_app/slider/slider_azon.dart';
 
 class Yakun_bomdod extends StatefulWidget {
   const Yakun_bomdod({super.key});

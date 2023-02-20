@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:namoz_app/Widgets/text_style.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/slider/slider_azon.dart';
+import 'package:namoz_app/slider/slider_azon.dart';
 import 'package:namoz_app/erkaklar_uchun/bomdod/Pages/17_Yakun_bomdod.dart';
 
 class Salom_bomdod extends StatelessWidget {

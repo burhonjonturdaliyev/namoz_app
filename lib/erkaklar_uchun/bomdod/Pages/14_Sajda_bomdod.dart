@@ -1,7 +1,7 @@
 // ignore_for_file: camel_case_types, file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/azon/slider/slider_azon.dart';
+import 'package:namoz_app/slider/slider_azon.dart';
 import 'package:namoz_app/erkaklar_uchun/bomdod/Pages/15_Qada_bomdod.dart';
 
 import '../../../Widgets/text_style.dart';
