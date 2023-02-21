@@ -1,13 +1,13 @@
 // ignore_for_file: camel_case_types, file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/peshin/pages/8_Sajda_Peshin.dart';
-import 'package:namoz_app/slider/slider_azon.dart';
+import 'package:namoz_app/erkaklar_uchun/peshin/pages/27_Sajda_Peshin.dart';
 
 import '../../../Widgets/text_style.dart';
+import '../../../slider/slider_azon.dart';
 
-class Jalsa_Peshin extends StatelessWidget {
-  const Jalsa_Peshin({super.key});
+class Jalsa_peshin_4 extends StatelessWidget {
+  const Jalsa_peshin_4({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class Jalsa_Peshin extends StatelessWidget {
                 children: [
                   Row(
                     // ignore: prefer_const_literals_to_create_immutables
-                    children: [Bold_style(text: "7. Jalsa")],
+                    children: [Bold_style(text: "26. Jalsa")],
                   ),
                   SizedBox(
                     height: 10,
@@ -34,7 +34,8 @@ class Jalsa_Peshin extends StatelessWidget {
                   Row(
                     children: [
                       Info_style(
-                          text: "«Allohu akbar» deb sajdadan bosh ko'tariladi")
+                          text:
+                              "«Allohu akbar» deb sajdadan bosh ko'tariladi va biroz o'tiriladi.")
                     ],
                   ),
                   SizedBox(
@@ -54,10 +55,10 @@ class Jalsa_Peshin extends StatelessWidget {
             ),
           ),
           NavigationContainer(
-              currentPage: "7/30",
+              currentPage: "26/30",
               onNextPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => Sajda_peshin_2()));
+                    MaterialPageRoute(builder: (context) => Sajda_peshin_8()));
               },
               onPrevPressed: () {
                 Navigator.pop(context);

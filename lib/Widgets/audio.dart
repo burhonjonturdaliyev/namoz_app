@@ -39,6 +39,14 @@ class _Audio_widgetsState extends State<Audio_widgets> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+    deactivate();
+    player.stop();
+    player.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
@@ -52,10 +60,12 @@ class _Audio_widgetsState extends State<Audio_widgets> {
                 isPlaying ? Icons.pause : Icons.play_arrow,
               ),
               onPressed: () {
-                if (isPlaying) {
-                  player.pause();
-                } else {
-                  player.play(AssetSource(widget.location));
+                {
+                  if (isPlaying) {
+                    player.pause();
+                  } else {
+                    player.play(AssetSource(widget.location));
+                  }
                 }
               },
             ),

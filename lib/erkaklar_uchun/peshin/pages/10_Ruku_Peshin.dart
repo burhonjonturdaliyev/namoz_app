@@ -1,32 +1,29 @@
-// ignore_for_file: camel_case_types, file_names, prefer_const_constructors
+// ignore_for_file: camel_case_types, file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/peshin/pages/8_Sajda_Peshin.dart';
-import 'package:namoz_app/slider/slider_azon.dart';
+import 'package:namoz_app/erkaklar_uchun/peshin/pages/11_Qavma_Peshin.dart';
 
 import '../../../Widgets/text_style.dart';
+import '../../../slider/slider_azon.dart';
 
-class Jalsa_Peshin extends StatelessWidget {
-  const Jalsa_Peshin({super.key});
+class Ruku_peshin_2 extends StatelessWidget {
+  const Ruku_peshin_2({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: SafeArea(
-          child: Column(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
             color: Colors.white,
-            height: MediaQuery.of(context).size.height * 0.89,
+            height: MediaQuery.of(context).size.height * 0.9,
             child: Padding(
               padding: const EdgeInsets.only(top: 10, right: 8, left: 8),
               child: ListView(
                 children: [
                   Row(
-                    // ignore: prefer_const_literals_to_create_immutables
-                    children: [Bold_style(text: "7. Jalsa")],
+                    children: [Bold_style(text: "10. Ruku")],
                   ),
                   SizedBox(
                     height: 10,
@@ -34,7 +31,8 @@ class Jalsa_Peshin extends StatelessWidget {
                   Row(
                     children: [
                       Info_style(
-                          text: "«Allohu akbar» deb sajdadan bosh ko'tariladi")
+                          text:
+                              "«Allohu akbar», deb ruku qilinadi. Rukuda uch marta «Subhana robbiyal 'aziym», deyiladi")
                     ],
                   ),
                   SizedBox(
@@ -44,7 +42,7 @@ class Jalsa_Peshin extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        "Images/Jalsa.png",
+                        "Images/Ruku.png",
                         width: MediaQuery.of(context).size.width * 0.9,
                       )
                     ],
@@ -54,16 +52,16 @@ class Jalsa_Peshin extends StatelessWidget {
             ),
           ),
           NavigationContainer(
-              currentPage: "7/30",
+              currentPage: "10/30",
               onNextPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => Sajda_peshin_2()));
+                    MaterialPageRoute(builder: (context) => Qavma_peshin_2()));
               },
               onPrevPressed: () {
                 Navigator.pop(context);
               })
         ],
-      )),
+      ),
     );
   }
 }
