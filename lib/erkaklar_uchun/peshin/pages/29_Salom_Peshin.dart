@@ -1,13 +1,13 @@
 // ignore_for_file: camel_case_types, file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/peshin/pages/28_Qada_Peshin.dart';
+import 'package:namoz_app/erkaklar_uchun/peshin/pages/30_Yakun_Peshin.dart';
 
 import '../../../Widgets/text_style.dart';
 import '../../../slider/slider_azon.dart';
 
-class Sajda_peshin_8 extends StatelessWidget {
-  const Sajda_peshin_8({super.key});
+class Salom_peshin extends StatelessWidget {
+  const Salom_peshin({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +19,12 @@ class Sajda_peshin_8 extends StatelessWidget {
             color: Colors.white,
             height: MediaQuery.of(context).size.height * 0.9,
             child: Padding(
-              padding: const EdgeInsets.only(top: 10, left: 8, right: 8),
+              padding: const EdgeInsets.only(top: 10, right: 8, left: 8),
               child: ListView(
                 children: [
                   Row(
                     // ignore: prefer_const_literals_to_create_immutables
-                    children: [Bold_style(text: "27. Sajda")],
+                    children: [Bold_style(text: "29. Salom")],
                   ),
                   SizedBox(
                     height: 10,
@@ -33,7 +33,7 @@ class Sajda_peshin_8 extends StatelessWidget {
                     children: [
                       Info_style(
                           text:
-                              "«Allohu akbar», deb ikkinchi marta sajda qilinadi. Sajdada uch marta «Subhana robbiyal a'la», deyiladi.")
+                              "Avval o'ng, keyin chap yelkaga qarab: \"Assalomu aleykum va rohmatulloh\" deb salom berilib namozdan chiqiladi")
                     ],
                   ),
                   SizedBox(
@@ -42,14 +42,9 @@ class Sajda_peshin_8 extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset(
-                            "Images/Sajda.png",
-                            width: MediaQuery.of(context).size.width * 0.95,
-                          )
-                        ],
+                      Image.asset(
+                        "Images/Salom.png",
+                        width: MediaQuery.of(context).size.width * 0.95,
                       )
                     ],
                   )
@@ -58,10 +53,10 @@ class Sajda_peshin_8 extends StatelessWidget {
             ),
           ),
           NavigationContainer(
-              currentPage: "27/30",
+              currentPage: "29/30",
               onNextPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => Qada_peshin_2()));
+                    MaterialPageRoute(builder: (context) => Yakun_peshin()));
               },
               onPrevPressed: () {
                 Navigator.pop(context);
