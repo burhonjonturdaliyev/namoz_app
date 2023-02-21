@@ -6,13 +6,21 @@ import 'package:namoz_app/erkaklar_uchun/peshin/models/models_peshin.dart';
 import 'package:namoz_app/erkaklar_uchun/peshin/pages/1_Niyat_Peshin.dart';
 import 'package:namoz_app/erkaklar_uchun/peshin/pages/2_Takbir_Peshin.dart';
 import 'package:namoz_app/erkaklar_uchun/peshin/pages/3_Qiyom__Peshin.dart';
+import 'package:namoz_app/erkaklar_uchun/peshin/pages/4_Ruku_Peshin.dart';
+import 'package:namoz_app/erkaklar_uchun/peshin/pages/5_Qavma_Peshin.dart';
+import 'package:namoz_app/erkaklar_uchun/peshin/pages/6_Sajda_Peshin.dart';
+import 'package:namoz_app/erkaklar_uchun/peshin/pages/7_Jalsa_Peshin.dart';
 
 class Modul_Peshin extends StatelessWidget {
   Modul_Peshin({super.key});
   List<models_peshin> models = [
     models_peshin(name: "1. Niyat", page: Niyat_peshin()),
     models_peshin(name: "2. Takbir", page: Takbir_peshin()),
-    models_peshin(name: "3. Qiyom", page: Qiyom_peshin())
+    models_peshin(name: "3. Qiyom", page: Qiyom_peshin()),
+    models_peshin(name: "4. Ruku", page: Ruku_peshin()),
+    models_peshin(name: "5. Qavma", page: Qavma_peshin()),
+    models_peshin(name: "6. Sajda", page: Sajda_peshin()),
+    models_peshin(name: "7. Jalsa", page: Jalsa_Peshin())
   ];
 
   @override

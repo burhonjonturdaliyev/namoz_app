@@ -1,30 +1,31 @@
-// ignore_for_file: camel_case_types, file_names, prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: camel_case_types, file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/peshin/pages/5_Qavma_Peshin.dart';
+import 'package:namoz_app/slider/slider_azon.dart';
 
 import '../../../Widgets/text_style.dart';
-import '../../../slider/slider_azon.dart';
 
-class Ruku_peshin extends StatelessWidget {
-  const Ruku_peshin({super.key});
+class Jalsa_Peshin extends StatelessWidget {
+  const Jalsa_Peshin({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Column(
+      body: SafeArea(
+          child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
             color: Colors.white,
-            height: MediaQuery.of(context).size.height * 0.9,
+            height: MediaQuery.of(context).size.height * 0.89,
             child: Padding(
               padding: const EdgeInsets.only(top: 10, right: 8, left: 8),
               child: ListView(
                 children: [
                   Row(
-                    children: [Bold_style(text: "4. Ruku")],
+                    // ignore: prefer_const_literals_to_create_immutables
+                    children: [Bold_style(text: "7. Jalsa")],
                   ),
                   SizedBox(
                     height: 10,
@@ -32,8 +33,7 @@ class Ruku_peshin extends StatelessWidget {
                   Row(
                     children: [
                       Info_style(
-                          text:
-                              "Zam sura tugagach, «Allohu akbar», deb ruku qilinadi. Rukuda uch marta «Subhana robbiyal 'aziym», deyiladi")
+                          text: "«Allohu akbar» deb sajdadan bosh ko'tariladi")
                     ],
                   ),
                   SizedBox(
@@ -43,7 +43,7 @@ class Ruku_peshin extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        "Images/Ruku.png",
+                        "Images/Jalsa.png",
                         width: MediaQuery.of(context).size.width * 0.9,
                       )
                     ],
@@ -53,16 +53,13 @@ class Ruku_peshin extends StatelessWidget {
             ),
           ),
           NavigationContainer(
-              currentPage: "4/30",
-              onNextPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => Qavma_peshin()));
-              },
+              currentPage: "7/30",
+              onNextPressed: () {},
               onPrevPressed: () {
                 Navigator.pop(context);
               })
         ],
-      ),
+      )),
     );
   }
 }
