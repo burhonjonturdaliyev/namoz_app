@@ -1,30 +1,32 @@
 // ignore_for_file: camel_case_types, file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/peshin/pages/20_Jalsa_Peshin.dart';
 
 import '../../../Widgets/text_style.dart';
 import '../../../slider/slider_azon.dart';
+import '15_Sajda_Asr.dart';
 
-class Sajda_peshin_5 extends StatelessWidget {
-  const Sajda_peshin_5({super.key});
+class Jalsa_asr_2 extends StatelessWidget {
+  const Jalsa_asr_2({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      backgroundColor: Colors.white,
+      body: SafeArea(
+          child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
             color: Colors.white,
-            height: MediaQuery.of(context).size.height * 0.9,
+            height: MediaQuery.of(context).size.height * 0.89,
             child: Padding(
-              padding: const EdgeInsets.only(top: 10, left: 8, right: 8),
+              padding: const EdgeInsets.only(top: 10, right: 8, left: 8),
               child: ListView(
                 children: [
                   Row(
                     // ignore: prefer_const_literals_to_create_immutables
-                    children: [Bold_style(text: "19. Sajda")],
+                    children: [Bold_style(text: "14. Jalsa")],
                   ),
                   SizedBox(
                     height: 10,
@@ -33,7 +35,7 @@ class Sajda_peshin_5 extends StatelessWidget {
                     children: [
                       Info_style(
                           text:
-                              "«Allohu akbar», deb ikkinchi marta sajda qilinadi. Sajdada uch marta «Subhana robbiyal a'la», deyiladi")
+                              "«Allohu akbar» deb sajdadan bosh ko'tariladi va biroz o'tiriladi.")
                     ],
                   ),
                   SizedBox(
@@ -42,14 +44,9 @@ class Sajda_peshin_5 extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Image.asset(
-                            "Images/Sajda.png",
-                            width: MediaQuery.of(context).size.width * 0.95,
-                          )
-                        ],
+                      Image.asset(
+                        "Images/Jalsa.png",
+                        width: MediaQuery.of(context).size.width * 0.9,
                       )
                     ],
                   )
@@ -58,16 +55,16 @@ class Sajda_peshin_5 extends StatelessWidget {
             ),
           ),
           NavigationContainer(
-              currentPage: "19/30",
+              currentPage: "14/31",
               onNextPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => Jalsa_peshin_3()));
+                    MaterialPageRoute(builder: (context) => Sajda_asr_4()));
               },
               onPrevPressed: () {
                 Navigator.pop(context);
               })
         ],
-      ),
+      )),
     );
   }
 }

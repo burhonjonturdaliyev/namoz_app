@@ -1,25 +1,19 @@
 // ignore_for_file: camel_case_types, file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/peshin/pages/4_Ruku_Peshin.dart';
 
 import '../../../Widgets/audio.dart';
 import '../../../Widgets/hiden.dart';
 import '../../../Widgets/text_style.dart';
 import '../../../slider/slider_azon.dart';
+import '11_Ruku_Asr.dart';
 
-class Qiyom_peshin extends StatefulWidget {
-  const Qiyom_peshin({super.key});
+class Qiyom_asr_2 extends StatelessWidget {
+  const Qiyom_asr_2({super.key});
 
-  @override
-  State<Qiyom_peshin> createState() => _Qiyom_peshinState();
-}
-
-class _Qiyom_peshinState extends State<Qiyom_peshin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -30,12 +24,19 @@ class _Qiyom_peshinState extends State<Qiyom_peshin> {
               child: Padding(
                 padding: const EdgeInsets.only(top: 10, right: 8, left: 8),
                 child: ListView(
-                  // ignore: prefer_const_literals_to_create_immutables
                   children: [
                     Row(
                       // ignore: prefer_const_literals_to_create_immutables
+                      children: [Bold_style(text: "10. 2-chi rakat. Qiyom")],
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Row(
                       children: [
-                        Bold_style(text: "3. Qiyom"),
+                        Info_style(
+                            text:
+                                "«Allohu akbar», deb qiyomga (tikka) turiladi.")
                       ],
                     ),
                     SizedBox(
@@ -45,7 +46,7 @@ class _Qiyom_peshinState extends State<Qiyom_peshin> {
                       children: [
                         Info_style(
                             text:
-                                "Qo'llar bog'lanadi va Sano duosi, Fotiha surasi va biror zam sura o'qiladi:")
+                                "Qiyomda «Bismillahir rohmanir rohiym» dan boshlab, Fotiha surasi, orqasidan bir zam sura o'qiladi.")
                       ],
                     ),
                     SizedBox(
@@ -56,47 +57,9 @@ class _Qiyom_peshinState extends State<Qiyom_peshin> {
                       children: [
                         Image.asset(
                           "Images/Niyat.png",
-                          width: MediaQuery.of(context).size.width * 0.45,
+                          width: MediaQuery.of(context).size.width * 0.55,
                         )
                       ],
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Hiden_context(
-                        Display: Column(children: [
-                          Row(
-                            // ignore: prefer_const_literals_to_create_immutables
-                            children: [
-                              Bold_style(
-                                  text:
-                                      "Subhanakallouhumma va bihamdika va tabarokasmuka va taa’la jadduka va la ilaha g‘oyruk")
-                            ],
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Row(
-                            children: [
-                              Info_style(
-                                  text:
-                                      "Ma'nosi: «Allohim! Sening noming muborakdir. Shon-sharafing ulug'dir. Sendan o'zga iloh yo'qdir»")
-                            ],
-                          ),
-                          SizedBox(
-                            height: 15,
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Audio_widgets(location: ("Sano_duo.mp3"))
-                            ],
-                          )
-                        ]),
-                        Hide: "SANO DUOSI",
-                        Show: "SANO DUOSI"),
-                    Divider(
-                      thickness: 1,
                     ),
                     Hiden_context(
                         Display: Column(children: [
@@ -148,12 +111,15 @@ class _Qiyom_peshinState extends State<Qiyom_peshin> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       // ignore: prefer_const_literals_to_create_immutables
                       children: [
-                        Text(
-                          "Zam suralar",
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18,
-                              fontWeight: FontWeight.bold),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            "ZAM SURALARI",
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold),
+                          ),
                         )
                       ],
                     ),
@@ -362,10 +328,10 @@ class _Qiyom_peshinState extends State<Qiyom_peshin> {
               ),
             ),
             NavigationContainer(
-                currentPage: "3/30",
+                currentPage: "10/31",
                 onNextPressed: () {
                   Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => Ruku_peshin()));
+                      MaterialPageRoute(builder: (context) => Ruku_asr_2()));
                 },
                 onPrevPressed: () {
                   Navigator.pop(context);

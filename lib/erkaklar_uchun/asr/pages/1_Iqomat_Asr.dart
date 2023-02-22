@@ -126,7 +126,7 @@ class _Iqomat_asrState extends State<Iqomat_asr> {
           ]),
         ),
         NavigationContainer(
-            currentPage: "1/30",
+            currentPage: "1/31",
             onNextPressed: () {
               Navigator.of(context)
                   .push(MaterialPageRoute(builder: (context) => Niyat_asr()));

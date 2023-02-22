@@ -1,21 +1,21 @@
 // ignore_for_file: camel_case_types, file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/peshin/pages/4_Ruku_Peshin.dart';
+import 'package:namoz_app/erkaklar_uchun/asr/pages/5_Ruku_Asr.dart';
 
 import '../../../Widgets/audio.dart';
 import '../../../Widgets/hiden.dart';
 import '../../../Widgets/text_style.dart';
 import '../../../slider/slider_azon.dart';
 
-class Qiyom_peshin extends StatefulWidget {
-  const Qiyom_peshin({super.key});
+class Qiyom_asr extends StatefulWidget {
+  const Qiyom_asr({super.key});
 
   @override
-  State<Qiyom_peshin> createState() => _Qiyom_peshinState();
+  State<Qiyom_asr> createState() => _Qiyom_asrState();
 }
 
-class _Qiyom_peshinState extends State<Qiyom_peshin> {
+class _Qiyom_asrState extends State<Qiyom_asr> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +35,7 @@ class _Qiyom_peshinState extends State<Qiyom_peshin> {
                     Row(
                       // ignore: prefer_const_literals_to_create_immutables
                       children: [
-                        Bold_style(text: "3. Qiyom"),
+                        Bold_style(text: "4. Qiyom"),
                       ],
                     ),
                     SizedBox(
@@ -362,10 +362,10 @@ class _Qiyom_peshinState extends State<Qiyom_peshin> {
               ),
             ),
             NavigationContainer(
-                currentPage: "3/30",
+                currentPage: "4/31",
                 onNextPressed: () {
                   Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => Ruku_peshin()));
+                      MaterialPageRoute(builder: (context) => Ruku_asr()));
                 },
                 onPrevPressed: () {
                   Navigator.pop(context);

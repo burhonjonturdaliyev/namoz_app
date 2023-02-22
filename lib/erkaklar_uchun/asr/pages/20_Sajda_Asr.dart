@@ -1,13 +1,13 @@
 // ignore_for_file: camel_case_types, file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/peshin/pages/20_Jalsa_Peshin.dart';
 
 import '../../../Widgets/text_style.dart';
 import '../../../slider/slider_azon.dart';
+import '21_Jalsa_Asr.dart';
 
-class Sajda_peshin_5 extends StatelessWidget {
-  const Sajda_peshin_5({super.key});
+class Sajda_asr_5 extends StatelessWidget {
+  const Sajda_asr_5({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class Sajda_peshin_5 extends StatelessWidget {
                 children: [
                   Row(
                     // ignore: prefer_const_literals_to_create_immutables
-                    children: [Bold_style(text: "19. Sajda")],
+                    children: [Bold_style(text: "20. Sajda")],
                   ),
                   SizedBox(
                     height: 10,
@@ -58,10 +58,10 @@ class Sajda_peshin_5 extends StatelessWidget {
             ),
           ),
           NavigationContainer(
-              currentPage: "19/30",
+              currentPage: "20/31",
               onNextPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => Jalsa_peshin_3()));
+                    MaterialPageRoute(builder: (context) => Jalsa_asr_3()));
               },
               onPrevPressed: () {
                 Navigator.pop(context);

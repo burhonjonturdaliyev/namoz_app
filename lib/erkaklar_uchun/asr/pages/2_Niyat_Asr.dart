@@ -1,6 +1,7 @@
 // ignore_for_file: camel_case_types, file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:namoz_app/erkaklar_uchun/asr/pages/3_Takbir_Asr.dart';
 
 import '../../../Widgets/text_style.dart';
 import '../../../slider/slider_azon.dart';
@@ -25,7 +26,7 @@ class Niyat_asr extends StatelessWidget {
                   children: [
                     // ignore: prefer_const_literals_to_create_immutables
                     Row(children: [
-                      Bold_style(text: "1. Niyat"),
+                      Bold_style(text: "2. Niyat"),
                     ]),
                     SizedBox(
                       height: 10,
@@ -61,12 +62,14 @@ class Niyat_asr extends StatelessWidget {
               ),
             ),
             NavigationContainer(
-                currentPage: "1/30",
+                currentPage: "2/31",
                 onNextPressed: () {
-                  // Navigator.of(context).push(
-                  //     MaterialPageRoute(builder: (context) => Takbir_peshin()));
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => Takbir_asr()));
                 },
-                onPrevPressed: null)
+                onPrevPressed: () {
+                  Navigator.pop(context);
+                })
           ],
         ),
       ),
