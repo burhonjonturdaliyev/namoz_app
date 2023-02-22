@@ -1,13 +1,17 @@
-// ignore_for_file: file_names, prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: file_names, prefer_const_literals_to_create_immutables, prefer_const_constructors, camel_case_types
 
 import 'package:flutter/material.dart';
 import 'package:namoz_app/Widgets/text_style.dart';
 import 'package:namoz_app/slider/slider_azon.dart';
 
-// ignore: camel_case_types
-class Iqomat_takbiri extends StatelessWidget {
+class Iqomat_takbiri extends StatefulWidget {
   const Iqomat_takbiri({super.key});
 
+  @override
+  State<Iqomat_takbiri> createState() => _Iqomat_takbiriState();
+}
+
+class _Iqomat_takbiriState extends State<Iqomat_takbiri> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
