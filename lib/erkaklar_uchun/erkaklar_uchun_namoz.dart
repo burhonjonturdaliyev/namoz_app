@@ -3,6 +3,7 @@ import 'package:namoz_app/erkaklar_uchun/asr/Modul/Modul_asr.dart';
 import 'package:namoz_app/erkaklar_uchun/azon/moduls.dart';
 import 'package:namoz_app/erkaklar_uchun/bomdod/Moduls/Modul_bomdod.dart';
 import 'package:namoz_app/erkaklar_uchun/peshin/Moduls/Modul_Peshin.dart';
+import 'package:namoz_app/erkaklar_uchun/shom/Modul/Modul_Shom.dart';
 
 // ignore: camel_case_types
 class Erkaklar_uchun_namoz extends StatelessWidget {
@@ -172,36 +173,40 @@ class Erkaklar_uchun_namoz extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Container(
-                width: MediaQuery.of(context).size.width * .95,
-                height: MediaQuery.of(context).size.height * .075,
-                decoration: BoxDecoration(
-                  color: Colors.blueAccent,
-                  borderRadius: BorderRadius.circular(16),
-                  // ignore: prefer_const_literals_to_create_immutables
-                  boxShadow: [
-                    const BoxShadow(
-                        offset: Offset(0, 17),
-                        blurRadius: 23,
-                        spreadRadius: -13,
-                        color: Colors.black54)
-                  ],
-                ),
-                child: Row(children: [
-                  Padding(
-                    padding: const EdgeInsets.only(right: 5, left: 5),
-                    child: Image.asset(
-                      "Images/namoz/bomdod.png",
-                      width: MediaQuery.of(context).size.height * .06,
-                    ),
+              GestureDetector(
+                child: Container(
+                  width: MediaQuery.of(context).size.width * .95,
+                  height: MediaQuery.of(context).size.height * .075,
+                  decoration: BoxDecoration(
+                    color: Colors.blueAccent,
+                    borderRadius: BorderRadius.circular(16),
+                    // ignore: prefer_const_literals_to_create_immutables
+                    boxShadow: [
+                      const BoxShadow(
+                          offset: Offset(0, 17),
+                          blurRadius: 23,
+                          spreadRadius: -13,
+                          color: Colors.black54)
+                    ],
                   ),
-                  Text(
-                    "SHOM",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: MediaQuery.of(context).size.height * .025),
-                  )
-                ]),
+                  child: Row(children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 5, left: 5),
+                      child: Image.asset(
+                        "Images/namoz/bomdod.png",
+                        width: MediaQuery.of(context).size.height * .06,
+                      ),
+                    ),
+                    Text(
+                      "SHOM",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: MediaQuery.of(context).size.height * .025),
+                    )
+                  ]),
+                ),
+                onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => Modul_Shom())),
               ),
               const SizedBox(
                 height: 10,
