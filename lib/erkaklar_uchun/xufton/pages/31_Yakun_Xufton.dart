@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../Widgets/hiden.dart';
 import '../../../Widgets/text_style.dart';
 import '../../../slider/slider_azon.dart';
 
@@ -42,21 +41,36 @@ class Yakun_xufton extends StatelessWidget {
                     SizedBox(
                       height: 10,
                     ),
-                    RichText(text: TextSpan(
-                      text: "Xufton namozining ikki rakat sunnati bomdod namozining ikki rakat sunnati kabi o'qiladi,"
-                    ),
-                    
-                    )
-                    Wrap(
-                      // ignore: prefer_const_literals_to_create_immutables
-                      children: [
-                        Text(
-                            ""),
-                        Text("faqat niyatda:"),
-                        Text(
-                            "Alloh rizoligi uchun, bugungi xufton namozining ikki rakat sunnatini o'z vaqtida o'qishni niyat qildim")
-                      ],
-                    )
+                    RichText(
+                        text: TextSpan(
+                            // ignore: prefer_const_literals_to_create_immutables
+                            children: [
+                          TextSpan(
+                            text:
+                                "Xufton namozining ikki rakat sunnati bomdod namozining ikki rakat sunnati kabi bo'lib,",
+                            style: TextStyle(color: Colors.black, fontSize: 16),
+                          ),
+                          TextSpan(
+                              text: " faqat niyatda:",
+                              style: TextStyle(
+                                fontStyle: FontStyle.italic,
+                                color: Colors.black87,
+                                fontSize: 16,
+                              )),
+                          TextSpan(
+                            text:
+                                " «Alloh rizoligi uchun, bugungi xufton namozining ikki rakat sunnatini o'z vaqtida o'qishni niyat qildim»,",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          TextSpan(
+                            text: "deb niyat qilinadi.",
+                            style: TextStyle(color: Colors.black, fontSize: 16),
+                          )
+                        ])),
                   ],
                 ),
               ),

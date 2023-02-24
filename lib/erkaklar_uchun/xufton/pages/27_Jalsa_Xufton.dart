@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import '../../../Widgets/text_style.dart';
 import '../../../slider/slider_azon.dart';
 import '28_Sajda_Xufton.dart';
-import '29_Qada_Xufton.dart';
 
 class Jalsa_xufton_4 extends StatelessWidget {
   const Jalsa_xufton_4({super.key});
