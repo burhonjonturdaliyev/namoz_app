@@ -31,7 +31,7 @@ class _Qada_vitrState extends State<Qada_vitr> {
                   children: [
                     Row(
                       // ignore: prefer_const_literals_to_create_immutables
-                      children: [Bold_style(text: "14. Qa'da")],
+                      children: [Bold_style(text: "15. Qa'da")],
                     ),
                     SizedBox(
                       height: 10,
@@ -138,7 +138,7 @@ class _Qada_vitrState extends State<Qada_vitr> {
             ),
           ),
           NavigationContainer(
-              currentPage: "14/26",
+              currentPage: "15/26",
               onNextPressed: () {
                 // Navigator.of(context).push(
                 //     MaterialPageRoute(builder: (context) => Qiyom_shom_3()));

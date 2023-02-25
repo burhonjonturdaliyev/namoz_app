@@ -1,13 +1,13 @@
 // ignore_for_file: camel_case_types, file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/vitr/pages/14_Sajda_Vitr.dart';
+import 'package:namoz_app/erkaklar_uchun/vitr/pages/15_Qada_Vitr.dart';
 
 import '../../../Widgets/text_style.dart';
 import '../../../slider/slider_azon.dart';
 
-class Jalsa_vitr_2 extends StatelessWidget {
-  const Jalsa_vitr_2({super.key});
+class Sajda_vitr_4 extends StatelessWidget {
+  const Sajda_vitr_4({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class Jalsa_vitr_2 extends StatelessWidget {
                 children: [
                   Row(
                     // ignore: prefer_const_literals_to_create_immutables
-                    children: [Bold_style(text: "13. Sajda")],
+                    children: [Bold_style(text: "14. Sajda")],
                   ),
                   SizedBox(
                     height: 10,
@@ -52,6 +52,13 @@ class Jalsa_vitr_2 extends StatelessWidget {
                     TextSpan(
                         text: "deyiladi. ",
                         style: TextStyle(color: Colors.black, fontSize: 16)),
+                    TextSpan(
+                      text: "Shu bilan birinchi rakat tugaydi",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 16,
+                          fontStyle: FontStyle.italic),
+                    ),
                   ])),
 
                   SizedBox(
@@ -71,10 +78,10 @@ class Jalsa_vitr_2 extends StatelessWidget {
             ),
           ),
           NavigationContainer(
-              currentPage: "13/26",
+              currentPage: "14/26",
               onNextPressed: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => Sajda_vitr_4()));
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) => Qada_vitr()));
               },
               onPrevPressed: () {
                 Navigator.pop(context);
