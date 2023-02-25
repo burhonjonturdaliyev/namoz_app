@@ -2,7 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:namoz_app/Widgets/text_style.dart';
-import 'package:namoz_app/erkaklar_uchun/asr/pages/4_Qiyom_Asr.dart';
 import 'package:namoz_app/erkaklar_uchun/shom/models/models_shom.dart';
 import 'package:namoz_app/erkaklar_uchun/shom/pages/10_Qiyom_Shom.dart';
 import 'package:namoz_app/erkaklar_uchun/shom/pages/11_Ruku_Shom.dart';
@@ -23,6 +22,7 @@ import 'package:namoz_app/erkaklar_uchun/shom/pages/24_Salom_Shom.dart';
 import 'package:namoz_app/erkaklar_uchun/shom/pages/25_Yakun_Shom.dart';
 import 'package:namoz_app/erkaklar_uchun/shom/pages/2_Niyat_Shom.dart';
 import 'package:namoz_app/erkaklar_uchun/shom/pages/3_Takbir_Shom.dart';
+import 'package:namoz_app/erkaklar_uchun/shom/pages/4_Qiyom_Shom.dart';
 import 'package:namoz_app/erkaklar_uchun/shom/pages/5_Ruku_Shom.dart';
 import 'package:namoz_app/erkaklar_uchun/shom/pages/6_Qavma_Shom.dart';
 import 'package:namoz_app/erkaklar_uchun/shom/pages/7_Sajda_Shom.dart';
@@ -35,7 +35,7 @@ class Modul_Shom extends StatelessWidget {
     models_shom(name: "1. Iqomat takbiri", page: Iqomat_shom()),
     models_shom(name: "2. Niyat", page: Niyat_shom()),
     models_shom(name: "3. Takbir", page: Takbir_shom()),
-    models_shom(name: "4. Qiyom", page: Qiyom_asr()),
+    models_shom(name: "4. Qiyom", page: Qiyom_shom()),
     models_shom(name: "5. Ruku", page: Ruku_shom()),
     models_shom(name: "6. Qavma", page: Qavma_shom()),
     models_shom(name: "7. Sajda", page: Sajda_shom()),
@@ -48,7 +48,7 @@ class Modul_Shom extends StatelessWidget {
     models_shom(name: "14. Jalsa", page: Jalsa_shom_2()),
     models_shom(name: "15. Sajda", page: Sajda_shom_4()),
     models_shom(name: "16. Qa'da", page: Qada_shom()),
-    models_shom(name: "17. Qiyom", page: Qiyom_shom_3()),
+    models_shom(name: "17. 3-chi rakat. Qiyom", page: Qiyom_shom_3()),
     models_shom(name: "18. Ruku", page: Ruku_shom_3()),
     models_shom(name: "19. Qavma", page: Qavma_shom_3()),
     models_shom(name: "20. Sajda", page: Sajda_shom_5()),
