@@ -40,10 +40,9 @@ class _Audio_widgetsState extends State<Audio_widgets> {
 
   @override
   void dispose() {
-    super.dispose();
-    deactivate();
     player.stop();
     player.dispose();
+    super.dispose();
   }
 
   @override

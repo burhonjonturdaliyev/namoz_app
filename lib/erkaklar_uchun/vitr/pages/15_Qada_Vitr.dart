@@ -6,6 +6,7 @@ import '../../../Widgets/audio.dart';
 import '../../../Widgets/hiden.dart';
 import '../../../Widgets/text_style.dart';
 import '../../../slider/slider_azon.dart';
+import '16_Qiyom_Vitr.dart';
 
 class Qada_vitr extends StatefulWidget {
   const Qada_vitr({super.key});
@@ -140,8 +141,8 @@ class _Qada_vitrState extends State<Qada_vitr> {
           NavigationContainer(
               currentPage: "15/26",
               onNextPressed: () {
-                // Navigator.of(context).push(
-                //     MaterialPageRoute(builder: (context) => Qiyom_shom_3()));
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => Qiyom_vitr_3()));
               },
               onPrevPressed: () {
                 Navigator.pop(context);

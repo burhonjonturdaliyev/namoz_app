@@ -30,7 +30,6 @@ class _Hiden_contextState extends State<Hiden_context> {
   @override
   void dispose() {
     super.dispose();
-    deactivate();
   }
 
   @override

@@ -39,6 +39,7 @@ dependencies:
   audioplayers: ^2.0.0
   animated_text_kit: ^4.2.2
   carousel_slider: ^4.2.1
+  audioplayer: ^0.8.1
 
 dev_dependencies:
   flutter_test:
@@ -94,6 +95,7 @@ flutter:
     - assets/At_Tahiyat.mp3
     - assets/Salovat.mp3
     - assets/Duo.mp3
+    - assets/Qunut_duosi.mp3
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
