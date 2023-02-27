@@ -4,6 +4,6 @@ import 'package:flutter/cupertino.dart';
 
 class models_vitr {
   String name;
-  Widget? page;
+  Widget page;
   models_vitr({required this.name, required this.page});
 }
