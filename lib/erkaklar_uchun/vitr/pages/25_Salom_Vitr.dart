@@ -1,32 +1,30 @@
 // ignore_for_file: camel_case_types, file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/vitr/pages/14_Sajda_Vitr.dart';
+import 'package:namoz_app/erkaklar_uchun/vitr/pages/26_Yakun_Vitr.dart';
 
 import '../../../Widgets/text_style.dart';
 import '../../../slider/slider_azon.dart';
 
-class Jalsa_vitr_2 extends StatelessWidget {
-  const Jalsa_vitr_2({super.key});
+class Salom_vitr extends StatelessWidget {
+  const Salom_vitr({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: SafeArea(
-          child: Column(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
             color: Colors.white,
-            height: MediaQuery.of(context).size.height * 0.89,
+            height: MediaQuery.of(context).size.height * 0.9,
             child: Padding(
               padding: const EdgeInsets.only(top: 10, right: 8, left: 8),
               child: ListView(
                 children: [
                   Row(
                     // ignore: prefer_const_literals_to_create_immutables
-                    children: [Bold_style(text: "13. Jalsa")],
+                    children: [Bold_style(text: "25. Salom")],
                   ),
                   SizedBox(
                     height: 10,
@@ -36,15 +34,19 @@ class Jalsa_vitr_2 extends StatelessWidget {
                       // ignore: prefer_const_literals_to_create_immutables
                       text: TextSpan(children: [
                     TextSpan(
-                        text: "«Allohu akbar» ",
+                        text: "Avval o'ng, keyin chap yelkaga qarab: ",
+                        style: TextStyle(color: Colors.black, fontSize: 16)),
+                    TextSpan(
+                        text: "«Assalomu aleykum va rohmatulloh»",
                         style: TextStyle(
                             color: Colors.black,
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold)),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16)),
                     TextSpan(
-                        text: "deb sajdadan bosh ko'tariladi.",
-                        style: TextStyle(color: Colors.black, fontSize: 16)),
+                        text: " deb salom berilib namozdan chiqiladi.",
+                        style: TextStyle(color: Colors.black, fontSize: 16))
                   ])),
+
                   SizedBox(
                     height: 10,
                   ),
@@ -52,8 +54,8 @@ class Jalsa_vitr_2 extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        "Images/Jalsa.png",
-                        width: MediaQuery.of(context).size.width * 0.9,
+                        "Images/Salom.png",
+                        width: MediaQuery.of(context).size.width * 0.95,
                       )
                     ],
                   )
@@ -62,16 +64,16 @@ class Jalsa_vitr_2 extends StatelessWidget {
             ),
           ),
           NavigationContainer(
-              currentPage: "13/26",
+              currentPage: "25/26",
               onNextPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => Sajda_vitr_4()));
+                    MaterialPageRoute(builder: (context) => Yakun_Vitr()));
               },
               onPrevPressed: () {
                 Navigator.pop(context);
               })
         ],
-      )),
+      ),
     );
   }
 }

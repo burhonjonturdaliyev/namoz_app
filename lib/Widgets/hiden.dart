@@ -37,7 +37,7 @@ class _Hiden_contextState extends State<Hiden_context> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        TextButton(
+        ElevatedButton(
           onPressed: _toggleContent,
           child: Text(_showContent ? widget.Hide : widget.Show),
         ),

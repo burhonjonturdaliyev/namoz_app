@@ -20,7 +20,7 @@ class _Splash_screenState extends State<Splash_screen> {
   void initState() {
     super.initState();
     Timer(
-      const Duration(seconds: 5),
+      const Duration(seconds: 6),
       () {
         Navigator.of(context).pushAndRemoveUntil(
             MaterialPageRoute(builder: (context) => const Home_screen()),
@@ -31,11 +31,9 @@ class _Splash_screenState extends State<Splash_screen> {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-      designSize: Size(360, 690),
-      builder: (context, child) => Scaffold(
-          backgroundColor: Colors.blue,
-          body: Column(
+    return Scaffold(
+      backgroundColor: Colors.blue,
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(

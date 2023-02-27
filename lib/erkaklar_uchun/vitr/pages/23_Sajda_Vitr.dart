@@ -1,58 +1,67 @@
-// ignore_for_file: camel_case_types, file_names, prefer_const_constructors
+// ignore_for_file: camel_case_types, file_names
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/vitr/pages/14_Sajda_Vitr.dart';
+import 'package:namoz_app/erkaklar_uchun/vitr/pages/24_Qada_Vitr.dart';
 
 import '../../../Widgets/text_style.dart';
 import '../../../slider/slider_azon.dart';
 
-class Jalsa_vitr_2 extends StatelessWidget {
-  const Jalsa_vitr_2({super.key});
+class Sajda_vitr_6 extends StatelessWidget {
+  const Sajda_vitr_6({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: SafeArea(
-          child: Column(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
             color: Colors.white,
-            height: MediaQuery.of(context).size.height * 0.89,
+            height: MediaQuery.of(context).size.height * 0.9,
             child: Padding(
-              padding: const EdgeInsets.only(top: 10, right: 8, left: 8),
+              padding: const EdgeInsets.only(top: 10, left: 8, right: 8),
               child: ListView(
                 children: [
                   Row(
                     // ignore: prefer_const_literals_to_create_immutables
-                    children: [Bold_style(text: "13. Jalsa")],
+                    children: [const Bold_style(text: "23. Sajda")],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   // ignore: prefer_const_literals_to_create_immutables
                   RichText(
                       // ignore: prefer_const_literals_to_create_immutables
-                      text: TextSpan(children: [
+                      text: const TextSpan(children: [
                     TextSpan(
-                        text: "«Allohu akbar» ",
+                        text: "«Allohu akbar», ",
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 16,
                             fontWeight: FontWeight.bold)),
                     TextSpan(
-                        text: "deb sajdadan bosh ko'tariladi.",
+                        text:
+                            "deb ikkinchi marta sajda qilinadi. Sajdada uch marta: ",
+                        style: TextStyle(color: Colors.black, fontSize: 16)),
+                    TextSpan(
+                        text: "«Subhana robbiyal a'la» ",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold)),
+                    TextSpan(
+                        text: "deyiladi. ",
                         style: TextStyle(color: Colors.black, fontSize: 16)),
                   ])),
-                  SizedBox(
+
+                  const SizedBox(
                     height: 10,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(
-                        "Images/Jalsa.png",
+                        "Images/Sajda.png",
                         width: MediaQuery.of(context).size.width * 0.9,
                       )
                     ],
@@ -62,16 +71,17 @@ class Jalsa_vitr_2 extends StatelessWidget {
             ),
           ),
           NavigationContainer(
-              currentPage: "13/26",
+              currentPage: "23/26",
               onNextPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => Sajda_vitr_4()));
+                    // ignore: prefer_const_constructors
+                    MaterialPageRoute(builder: (context) => Qada_vitr_2()));
               },
               onPrevPressed: () {
                 Navigator.pop(context);
               })
         ],
-      )),
+      ),
     );
   }
 }

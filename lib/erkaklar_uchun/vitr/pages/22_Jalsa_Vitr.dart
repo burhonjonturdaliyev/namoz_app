@@ -1,13 +1,13 @@
 // ignore_for_file: camel_case_types, file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:namoz_app/erkaklar_uchun/vitr/pages/14_Sajda_Vitr.dart';
+import 'package:namoz_app/erkaklar_uchun/vitr/pages/23_Sajda_Vitr.dart';
 
 import '../../../Widgets/text_style.dart';
 import '../../../slider/slider_azon.dart';
 
-class Jalsa_vitr_2 extends StatelessWidget {
-  const Jalsa_vitr_2({super.key});
+class Jalsa_Vitr_3 extends StatelessWidget {
+  const Jalsa_Vitr_3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class Jalsa_vitr_2 extends StatelessWidget {
                 children: [
                   Row(
                     // ignore: prefer_const_literals_to_create_immutables
-                    children: [Bold_style(text: "13. Jalsa")],
+                    children: [Bold_style(text: "22. Jalsa")],
                   ),
                   SizedBox(
                     height: 10,
@@ -62,10 +62,10 @@ class Jalsa_vitr_2 extends StatelessWidget {
             ),
           ),
           NavigationContainer(
-              currentPage: "13/26",
+              currentPage: "22/26",
               onNextPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => Sajda_vitr_4()));
+                    MaterialPageRoute(builder: (context) => Sajda_vitr_6()));
               },
               onPrevPressed: () {
                 Navigator.pop(context);

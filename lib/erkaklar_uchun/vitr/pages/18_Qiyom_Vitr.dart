@@ -1,6 +1,7 @@
 // ignore_for_file: camel_case_types, file_names, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:namoz_app/erkaklar_uchun/vitr/pages/19_Ruku_Vitr.dart';
 
 import '../../../Widgets/audio.dart';
 import '../../../Widgets/hiden.dart';
@@ -112,8 +113,8 @@ class _Qiyom_vitr_4State extends State<Qiyom_vitr_4> {
             NavigationContainer(
                 currentPage: "18/26",
                 onNextPressed: () {
-                  // Navigator.of(context).push(
-                  //     MaterialPageRoute(builder: (context) => Takbir_vitr_2()));
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => Ruku_vitr_3()));
                 },
                 onPrevPressed: () {
                   Navigator.pop(context);
