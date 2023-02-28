@@ -40,6 +40,8 @@ dependencies:
   animated_text_kit: ^4.2.2
   carousel_slider: ^4.2.1
   audioplayer: ^0.8.1
+  get: ^4.6.5
+  page_transition: ^2.0.9
 
 dev_dependencies:
   flutter_test:

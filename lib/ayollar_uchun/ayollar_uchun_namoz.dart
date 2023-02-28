@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:namoz_app/ayollar_uchun/ayollarga_xos_holatlar/Modul/Modul_ayollarga_xos_holatlar.dart';
+import 'package:page_transition/page_transition.dart';
 
 // ignore: camel_case_types
 class ayollar_uchun_namoz extends StatelessWidget {
@@ -17,7 +19,6 @@ class ayollar_uchun_namoz extends StatelessWidget {
           child: Column(
             children: [
               GestureDetector(
-                onTap: () {},
                 child: Container(
                   width: MediaQuery.of(context).size.width * .95,
                   height: MediaQuery.of(context).size.height * .075,
@@ -47,6 +48,14 @@ class ayollar_uchun_namoz extends StatelessWidget {
                     )
                   ]),
                 ),
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      PageTransition(
+                          child: Modul_ayollarga_xos_holatlar(),
+                          type: PageTransitionType.rightToLeftJoined,
+                          childCurrent: const ayollar_uchun_namoz()));
+                },
               ),
               const SizedBox(
                 height: 10,
