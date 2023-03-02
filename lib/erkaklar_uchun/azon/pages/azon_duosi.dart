@@ -16,7 +16,7 @@ class Azon_duosi extends StatelessWidget {
         Container(
           margin: EdgeInsets.only(left: 8, right: 8, top: 10),
           color: Colors.white,
-          height: MediaQuery.of(context).size.height * 0.92,
+          height: MediaQuery.of(context).size.height * 0.88,
           child: ListView(
             children: [
               Row(

@@ -22,7 +22,7 @@ class _Yakun_bomdodState extends State<Yakun_bomdod> {
           children: [
             Container(
               color: Colors.white,
-              height: MediaQuery.of(context).size.height * 0.89,
+              height: MediaQuery.of(context).size.height * 0.88,
               child: Padding(
                 padding: const EdgeInsets.only(top: 10, right: 8, left: 8),
                 child: ListView(

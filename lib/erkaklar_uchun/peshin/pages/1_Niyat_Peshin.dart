@@ -18,7 +18,7 @@ class Niyat_peshin extends StatelessWidget {
           children: [
             Container(
               color: Colors.white,
-              height: MediaQuery.of(context).size.height * 0.89,
+              height: MediaQuery.of(context).size.height * 0.88,
               child: Padding(
                 padding: const EdgeInsets.only(top: 10, left: 8, right: 8),
                 child: ListView(

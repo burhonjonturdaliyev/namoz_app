@@ -17,7 +17,7 @@ class Sajda_peshin extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
-              height: MediaQuery.of(context).size.height * 0.89,
+              height: MediaQuery.of(context).size.height * 0.88,
               color: Colors.white,
               child: Padding(
                 padding: const EdgeInsets.only(top: 10, right: 8, left: 8),

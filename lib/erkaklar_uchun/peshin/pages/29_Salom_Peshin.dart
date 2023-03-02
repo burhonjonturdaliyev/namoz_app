@@ -17,7 +17,7 @@ class Salom_peshin extends StatelessWidget {
         children: [
           Container(
             color: Colors.white,
-            height: MediaQuery.of(context).size.height * 0.9,
+            height: MediaQuery.of(context).size.height * 0.88,
             child: Padding(
               padding: const EdgeInsets.only(top: 10, right: 8, left: 8),
               child: ListView(

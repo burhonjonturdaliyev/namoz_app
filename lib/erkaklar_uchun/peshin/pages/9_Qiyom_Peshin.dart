@@ -25,7 +25,7 @@ class _Qiyom_peshin_2State extends State<Qiyom_peshin_2> {
           children: [
             Container(
               color: Colors.white,
-              height: MediaQuery.of(context).size.height * 0.89,
+              height: MediaQuery.of(context).size.height * 0.88,
               child: Padding(
                 padding: const EdgeInsets.only(top: 10, right: 8, left: 8),
                 child: ListView(

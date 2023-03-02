@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:namoz_app/ayollar_uchun/ayollarga_xos_holatlar/Modul/Modul_ayollarga_xos_holatlar.dart';
+import 'package:namoz_app/ayollar_uchun/bomdod/Modul/Modul_ayollar_bomdod.dart';
 import 'package:page_transition/page_transition.dart';
 
 // ignore: camel_case_types
@@ -60,36 +61,45 @@ class ayollar_uchun_namoz extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Container(
-                width: MediaQuery.of(context).size.width * .95,
-                height: MediaQuery.of(context).size.height * .075,
-                decoration: BoxDecoration(
-                  color: Colors.blueAccent,
-                  borderRadius: BorderRadius.circular(16),
-                  // ignore: prefer_const_literals_to_create_immutables
-                  boxShadow: [
-                    const BoxShadow(
-                        offset: Offset(0, 17),
-                        blurRadius: 23,
-                        spreadRadius: -13,
-                        color: Colors.black54)
-                  ],
-                ),
-                child: Row(children: [
-                  Padding(
-                    padding: const EdgeInsets.only(right: 5, left: 5),
-                    child: Image.asset(
-                      "Images/namoz/bomdod.png",
-                      width: MediaQuery.of(context).size.height * .06,
-                    ),
+              InkWell(
+                child: Container(
+                  width: MediaQuery.of(context).size.width * .95,
+                  height: MediaQuery.of(context).size.height * .075,
+                  decoration: BoxDecoration(
+                    color: Colors.blueAccent,
+                    borderRadius: BorderRadius.circular(16),
+                    // ignore: prefer_const_literals_to_create_immutables
+                    boxShadow: [
+                      const BoxShadow(
+                          offset: Offset(0, 17),
+                          blurRadius: 23,
+                          spreadRadius: -13,
+                          color: Colors.black54)
+                    ],
                   ),
-                  Text(
-                    "BOMDOD",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: MediaQuery.of(context).size.height * .025),
-                  )
-                ]),
+                  child: Row(children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 5, left: 5),
+                      child: Image.asset(
+                        "Images/namoz/bomdod.png",
+                        width: MediaQuery.of(context).size.height * .06,
+                      ),
+                    ),
+                    Text(
+                      "BOMDOD",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: MediaQuery.of(context).size.height * .025),
+                    )
+                  ]),
+                ),
+                onTap: () => Navigator.push(
+                  context,
+                  PageTransition(
+                      child: Modul_ayollar_bomdod(),
+                      type: PageTransitionType.rightToLeftJoined,
+                      childCurrent: const ayollar_uchun_namoz()),
+                ),
               ),
               const SizedBox(
                 height: 10,

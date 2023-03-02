@@ -15,7 +15,7 @@ class Takbir_bomdod extends StatelessWidget {
           Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
         Container(
           color: Colors.white,
-          height: MediaQuery.of(context).size.height * 0.9,
+          height: MediaQuery.of(context).size.height * 0.88,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: ListView(

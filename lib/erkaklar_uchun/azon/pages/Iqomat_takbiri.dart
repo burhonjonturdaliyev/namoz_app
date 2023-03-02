@@ -20,7 +20,7 @@ class _Iqomat_takbiriState extends State<Iqomat_takbiri> {
         Container(
           margin: EdgeInsets.only(left: 8, right: 8, top: 10),
           color: Colors.white,
-          height: MediaQuery.of(context).size.height * 0.92,
+          height: MediaQuery.of(context).size.height * 0.88,
           child: ListView(children: [
             Row(
               children: [Bold_style(text: "IQOMAT TAKBIRI")],
